@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h3> Items in  Stock <h3>
+	<ul>
+		{% for litems in items %}
+		<li>
+			<a href="{% url 'item_detail' litems.id %}">
+				{{ litems.title|capfirst }}
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

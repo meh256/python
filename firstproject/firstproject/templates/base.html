@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Inventory </title>
+  <meta name="Description" content="">
+  <link rel="stylesheet" href="{% static 'main.css' %}">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+{% block content %}
+{% endblock content %}
+<script type="text/javascript" src="{% static 'main.js' %}"></script>
+</body>
+</html>

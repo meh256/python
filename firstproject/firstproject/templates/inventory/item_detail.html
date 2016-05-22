@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<a href="{% url 'index' %}"> Back to Items List </a>
+	<h3> Item Name:  {{ litem.title|capfirst}}</h3>
+	<p> Number in Stock {{ litem.amount }}  </p>
+	<h4> Description </h4>
+	<p> {{litem.description}}
+{% endblock %}
